@@ -1,6 +1,9 @@
+// Importing Mongoose Schema model
 const { Schema, model } = require('mongoose');
-
+// Importing bcrypt
 const bcrypt = require('bcrypt');
+
+
 
 const profileSchema = new Schema({
     name: {
@@ -29,7 +32,7 @@ const profileSchema = new Schema({
 });
 
 
-
+// Encrypt password before save
 profileSchema.pre('save', async function (next) {
     if (this.isNew || this.isModified('password')) {
       const saltRounds = 10;
@@ -40,11 +43,13 @@ profileSchema.pre('save', async function (next) {
   });
 
 
-
+// Method to validate password
 profileSchema.methods.isCorrectPassword = async function (password) {
     return bcrypt.compare(password, this.password);
   };
 
+
+// Create Profile model
 const Profile = model('Profile', profileSchema);
 
 module.exports = Profile;
