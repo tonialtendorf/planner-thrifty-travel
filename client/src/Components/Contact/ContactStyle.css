@@ -1,0 +1,41 @@
+.form {
+    color: #596E79;
+}
+
+label{
+    color: #123C69;
+    margin-bottom: .5rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    margin: auto;
+    max-width: 25%;
+
+}
+
+form input, form textarea{
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    background-color:  #F0ECE2;
+    border-color: darkgray;
+    color: #596E79
+}
+
+.btn {
+    background: linear-gradient(to right, #596E79, #C7B198);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+label{
+    font-weight: bold;
+}
