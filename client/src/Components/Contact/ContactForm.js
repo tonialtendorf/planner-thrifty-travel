@@ -15,6 +15,9 @@ const ContactForm = () => {
             <textarea rows="6" placeholder="Type your message here"></textarea>
             <button className="btn">Submit</button>
         </form>
+        <br />
+        <br />
+        <br />
     </div>
 )
 }

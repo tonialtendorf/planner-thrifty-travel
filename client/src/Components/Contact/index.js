@@ -8,7 +8,7 @@ const Contact = () => {
     <div>
         <Navigation />
         <ContactForm />
-        {/* <Footer /> */}
+        <Footer />
     </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from '../Navigation'
-// import Footer from '../Footer'
+import Footer from '../Footer'
 import HomeContent from './HomeContent'
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
     <div> 
         <Navigation />
         <HomeContent />
-        {/* <Footer />  */}
+        <Footer /> 
     </div>
     )
 }
