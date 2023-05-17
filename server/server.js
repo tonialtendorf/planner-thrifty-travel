@@ -1,3 +1,5 @@
+const path = require('path');
+
 const express = require('express');
 
 // Imports ApolloServer from apollo-server-express
@@ -5,6 +7,8 @@ const { ApolloServer } = require('apollo-server-express');
 
 // Imports the database connection
 const db = require('./config/connection');
+
+
 
 // Imports GraphQL schemas and resolvers
 const { typeDefs, resolvers } = require('./schemas');
@@ -25,6 +29,14 @@ const server = new ApolloServer({
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(__dirname, '../client/build')));
+}
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../client/build/index.html'));
+});
 
 const startApolloServer = async () => {
 
