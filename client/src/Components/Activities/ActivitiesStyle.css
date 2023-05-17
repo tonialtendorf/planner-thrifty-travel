@@ -1,0 +1,37 @@
+.activity-heading{
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+.activity-container{
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding-bottom: 5rem;
+}
+
+.activity-card{
+    background: #DFD3C3;;
+    padding: 1.2rem 1rem;
+}
+
+.activity-card img{
+    width: 100%;
+}
+
+.activity-title {
+    color: #596E79;
+    padding: 1rem 0;
+}
+
+.btn-git{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.btn-git .btn{
+    padding: .5rem 1rem;
+}
