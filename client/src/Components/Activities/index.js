@@ -1,6 +1,6 @@
 import React from 'react';
 import Navigation from "../Navigation"
-// import Footer from '../Footer'
+import FooterContent from '../Footer/FooterContent'
 import ActivitiesContent from './ActivitiesContent';
 
 const Activities = () => {
@@ -8,7 +8,7 @@ const Activities = () => {
     <div>
         <Navigation />
         <ActivitiesContent />
-        {/* <Footer /> */}
+        <FooterContent />
     </div>
     )
 }
