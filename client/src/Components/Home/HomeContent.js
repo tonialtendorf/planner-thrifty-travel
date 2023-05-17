@@ -40,6 +40,7 @@ const Carousel = () => {
       <div className="carousel-text">
           <p>Scroll through the images to see what we have to offer and more!</p>
     </div>
+   
     </div>
   );
 };
