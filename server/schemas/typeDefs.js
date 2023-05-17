@@ -15,19 +15,19 @@ const typeDefs = gql`
   }
 
   type Query {
-    profiles: [Profile]!
-    profile(profileId: ID!): Profile
+    profiles: [Profile]!                                                                # Query to get profiles
+    profile(profileId: ID!): Profile                                                    # Query to get single profile
     # Because we have the context functionality in place to check a JWT and decode its data, we can use a query that will always find and return the logged in user's data
     # me: Profile
   }
 
   type Mutation {
-    addProfile(name: String!, email: String!, password: String!): Profile
-    login(email: String!, password: String!): Profile
+    addProfile(name: String!, email: String!, password: String!): Profile                # Mutation to add profile
+    login(email: String!, password: String!): Profile                                    # Mutation to login
 
-    # addSkill(profileId: ID!, skill: String!): Profile
-    # removeProfile: Profile
-    # removeSkill(skill: String!): Profile
+    # addTrip(profileId: ID!, trip: String!): Profile                                    # Mutation to add trip
+    # removeProfile: Profile                                                             # Mutation to remove profile
+    # removeTrip(trip: String!): Profile                                                 # Mutation to remove trip
   }
 `;
 

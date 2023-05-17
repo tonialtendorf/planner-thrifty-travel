@@ -1,5 +1,5 @@
-const db = require('../config/connection');
-const { Profile } = require('../models');
+const db = require('../server/config/connection');
+const { Profile } = require('../server/models');
 const profileSeeds = require('./profileSeeds.json');
 
 db.once('open', async () => {
