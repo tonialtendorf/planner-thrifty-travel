@@ -23,7 +23,7 @@ const profileSchema = new Schema({
         required: true,
         minlength: 5,
     },
-    activities: [
+    trip: [
         {
             type: String,
             trim: true,
