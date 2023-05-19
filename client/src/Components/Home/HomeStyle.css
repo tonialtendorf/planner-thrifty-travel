@@ -41,3 +41,7 @@
     color: black;
   }
 
+  .carousel-text p {
+    color: black;
+    font-size: larger;
+  }
