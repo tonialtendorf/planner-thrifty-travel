@@ -76,8 +76,8 @@ function CalendarContent() {
     return (
       <div className="calendar">
         <div className="calendar-header">
-          <h2>Interactive Calendar</h2>
-          <p>Selected Date: {selectedDate ? selectedDate.toDateString() : 'None'}</p>
+          <h2 className='title'>Calendar</h2>
+          <p className='title'>Selected Date: {selectedDate ? selectedDate.toDateString() : 'None'}</p>
           <p>{currentMonthName} {currentYear}</p>
         </div>
         <div className="calendar-grid">{renderCalendar()}</div>

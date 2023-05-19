@@ -11,6 +11,7 @@
   .calendar-header {
     text-align: center;
     margin-bottom: 10px;
+ 
   }
   
   .calendar-grid {
@@ -48,5 +49,8 @@
   .empty-day {
     visibility: hidden;
   }
-
+  
+  .title {
+    color: black;
+  }
   

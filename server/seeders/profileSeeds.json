@@ -1,0 +1,15 @@
+[
+  {
+    "name": "Jane Doe",
+    "email": "janedoe@tech.com",
+    "password": "password123"
+
+  }, 
+
+  {
+    "name": "Toni Voh",
+    "email": "tonivoh@gmail.com",
+    "password": "tonivoh123!"
+
+  }
+]
