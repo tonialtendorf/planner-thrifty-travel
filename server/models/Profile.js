@@ -1,35 +1,38 @@
-// Importing Mongoose Schema model
 const { Schema, model } = require('mongoose');
-// Importing bcrypt
-const bcrypt = require('bcrypt');
+
 
 
 
 const profileSchema = new Schema({
     name: {
-        type: String,
-        required: true,
-        unique: true,
-        trim: true,
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
     },
     email: {
-        type: String,
-        required: true,
-        unique: true,
-        match: [/.+@.+\..+/, 'Must match an email address!'],
+      type: String,
+      required: true,
+      unique: true,
+      match: [/.+@.+\..+/, 'Must match an email address!'],
     },
     password: {
-        type: String,
-        required: true,
-        minlength: 5,
+      type: String,
+      required: true,
+      minlength: 5,
+    },
+    profile: {
+      type: String, // or any other appropriate data type
+      // Add any additional configuration as needed
     },
     trip: [
-        {
-            type: String,
-            trim: true,
-        },
+      {
+        type: String,
+        trim: true,
+      },
     ],
-});
+  });
+  
 
 
 // Encrypt password before save
@@ -51,5 +54,6 @@ profileSchema.methods.isCorrectPassword = async function (password) {
 
 // Create Profile model
 const Profile = model('Profile', profileSchema);
+
 
 module.exports = Profile;
