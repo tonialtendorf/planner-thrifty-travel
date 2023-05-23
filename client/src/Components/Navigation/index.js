@@ -12,29 +12,32 @@ const Navigation = () => {
           <p>brought to you by Thrifty Travel</p>
         </NavLink>
         <ul className="nav-menu">
-          <li>
-            <NavLink to="/" className="active-link">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/activities" className="active-link">
-              Activities
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/calendar" className="active-link">
-              Calendar
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contact" className="active-link">
-              Contact
-            </NavLink>
+  
+            <ul className="nav-menu">
+                <li>
+                    <NavLink to="/" className="active-link">Home</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/activities" className="active-link">Activities</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/calendar" className="active-link">Calendar</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/contact" className="active-link">Contact</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/checkout" className="active-link">Checkout</NavLink>
+                </li>
+            </ul>
+        </div>
+    )
+
           </li>
         </ul>
       </div>
   );
+
 }
 
 
