@@ -12,15 +12,15 @@ export const ADD_PROFILE = gql`
   }
 `;
 
-export const ADD_TRIP = gql`
-  mutation addTrip($profileId: ID!, $trip: String!) {
-    addTrip(profileId: $profileId, trip: $trip) {
-      _id
-      name
-      trips
-    }
-  }
-`;
+// export const ADD_TRIP = gql`
+//   mutation addTrip($profileId: ID!, $trip: String!) {
+//     addTrip(profileId: $profileId, trip: $trip) {
+//       _id
+//       name
+//       trips
+//     }
+//   }
+// `;
 
 export const LOGIN_USER = gql`
   mutation login($email: String!, $password: String!) {
@@ -34,12 +34,12 @@ export const LOGIN_USER = gql`
   }
 `;
 
-export const REMOVE_TRIP = gql`
-  mutation removeTrip($trip: String!) {
-    removeTrip(trip: $trip) {
-      _id
-      name
-      trips
-    }
-  }
-`;
+// export const REMOVE_TRIP = gql`
+//   mutation removeTrip($trip: String!) {
+//     removeTrip(trip: $trip) {
+//       _id
+//       name
+//       trips
+//     }
+//   }
+// `;

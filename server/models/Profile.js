@@ -1,7 +1,5 @@
 const { Schema, model } = require('mongoose');
-
-
-
+const bcrypt = require('bcrypt');
 
 const profileSchema = new Schema({
     name: {
@@ -21,16 +19,16 @@ const profileSchema = new Schema({
       required: true,
       minlength: 5,
     },
-    profile: {
-      type: String, // or any other appropriate data type
-      // Add any additional configuration as needed
-    },
-    trip: [
-      {
-        type: String,
-        trim: true,
-      },
-    ],
+    // profile: {
+    //   type: String, // or any other appropriate data type
+    //   // Add any additional configuration as needed
+    // },
+    // trip: [
+    //   {
+    //     type: String,
+    //     trim: true,
+    //   },
+    // ],
   });
   
 
