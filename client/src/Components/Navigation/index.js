@@ -11,7 +11,6 @@ const Navigation = () => {
           <h1>Planner</h1>
           <p>brought to you by Thrifty Travel</p>
         </NavLink>
-        <ul className="nav-menu">
   
             <ul className="nav-menu">
                 <li>
@@ -31,11 +30,7 @@ const Navigation = () => {
                 </li>
             </ul>
         </div>
-    )
 
-          </li>
-        </ul>
-      </div>
   );
 
 }
