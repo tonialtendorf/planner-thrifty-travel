@@ -3,13 +3,16 @@ import { NavLink } from 'react-router-dom';
 import './NavigationStyle.css'
 
 
+
 const Navigation = () => {
-    return (
-        <div className="header header-bg">
-            <NavLink to="/">
-                <h1>Planner</h1>
-                <p>brought to you by Thrifty Travel</p> 
-            </NavLink>
+  return (
+      <div className="header header-bg">
+        <NavLink to="/">
+          <h1>Planner</h1>
+          <p>brought to you by Thrifty Travel</p>
+        </NavLink>
+        <ul className="nav-menu">
+  
             <ul className="nav-menu">
                 <li>
                     <NavLink to="/" className="active-link">Home</NavLink>
@@ -29,6 +32,12 @@ const Navigation = () => {
             </ul>
         </div>
     )
+
+          </li>
+        </ul>
+      </div>
+  );
+
 }
 
 
