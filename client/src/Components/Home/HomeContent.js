@@ -3,7 +3,8 @@ import './HomeStyle.css';
 import Excursions from '../assets/Excursions.PNG';
 import Flights from '../assets/Flights.PNG';
 import Hiking from '../assets/Hiking.PNG';
-import thriftytravel from '../assets/thriftytravel.PNG';
+import thriftytravel from '../assets/thriftytravelsquare.jpg';
+import { Link } from 'react-router-dom';
 
 const Carousel = () => {
   const [images] = useState([
@@ -30,7 +31,7 @@ const Carousel = () => {
     <div className="carousel-container">
       <div className="carousel-image">
         <img src={currentImage} alt="Carousel" />
-        <button className="contact-button">Contact Us</button>
+        <Link to="/contact" className="contact-button">Contact Us</Link>
       </div>
   
       <div className="carousel-buttons">
