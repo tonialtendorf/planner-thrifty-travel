@@ -2,6 +2,7 @@
   "name": "planner-thrifty-travel",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://tonialtendorf.github.io/planner-thrifty-planner",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,6 +10,8 @@
     "start": "node server.js",
     "seed": "cd server && npm run seed",
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "install": "cd server && npm i && cd ../client && npm i"
   },
   "keywords": [],
@@ -25,6 +28,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.1.1",
-    "concurrently": "^8.0.1"
+    "concurrently": "^8.0.1",
+    "gh-pages": "^5.0.0"
   }
 }
