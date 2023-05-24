@@ -12,6 +12,7 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "heroku-postbuild": "npm run build",
     "install": "cd server && npm i && cd ../client && npm i"
   },
   "keywords": [],
