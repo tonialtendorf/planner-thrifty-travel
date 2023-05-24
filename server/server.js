@@ -1,13 +1,13 @@
 const path = require('path');
-
 const express = require('express');
+const { authMiddleware } = require('./utils/auth');
+const jwt = require('jsonwebtoken')
 
 // Imports ApolloServer from apollo-server-express
 const { ApolloServer } = require('apollo-server-express');
 
 // Imports the database connection
 const db = require('./config/connection');
-
 
 
 // Imports GraphQL schemas and resolvers
@@ -24,7 +24,7 @@ const server = new ApolloServer({
 
   typeDefs,
   resolvers,
-
+  context: authMiddleware,
 });
 
 app.use(express.urlencoded({ extended: false }));
@@ -52,6 +52,6 @@ const startApolloServer = async () => {
 };
 
 // Call function to start the server
-startApolloServer();
+startApolloServer(typeDefs, resolvers)
 
 
