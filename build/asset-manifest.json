@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8f7ea8d3.css",
+    "main.js": "/static/js/main.15ebe0b9.js",
+    "static/media/citytour.PNG": "/static/media/citytour.ee0fe60aff604d637bfc.PNG",
+    "static/media/Excursions.PNG": "/static/media/Excursions.a21a21202591fb52deba.PNG",
+    "static/media/fishing.PNG": "/static/media/fishing.243241cc8c5c18ae6bc2.PNG",
+    "static/media/Hiking.PNG": "/static/media/Hiking.4328f337ea212832476d.PNG",
+    "static/media/Flights.PNG": "/static/media/Flights.46b74d430722dde3cc87.PNG",
+    "static/media/kayaking.jpg": "/static/media/kayaking.ec0fb5555c683bf4f305.jpg",
+    "static/media/snorkeling.jpg": "/static/media/snorkeling.e1ab3281df569917983e.jpg",
+    "static/media/hiking.jpeg": "/static/media/hiking.af36eb214a2b2b01555a.jpeg",
+    "static/media/shopping.jpg": "/static/media/shopping.d11dad1b36a161ba44bd.jpg",
+    "index.html": "/index.html",
+    "main.8f7ea8d3.css.map": "/static/css/main.8f7ea8d3.css.map",
+    "main.15ebe0b9.js.map": "/static/js/main.15ebe0b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8f7ea8d3.css",
+    "static/js/main.15ebe0b9.js"
+  ]
+}
