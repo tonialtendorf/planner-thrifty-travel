@@ -23,7 +23,7 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-  <BrowserRouter basename="/planner-thrifty-travel">
+  <BrowserRouter>
     <App />
   </BrowserRouter>,
   document.getElementById("root")
