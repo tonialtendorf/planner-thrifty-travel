@@ -2,7 +2,7 @@
   "name": "planner-thrifty-travel",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build",
@@ -11,7 +11,6 @@
     "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "heroku-postbuild": "npm run build",
     "install": "cd server && npm i && cd ../client && npm i"
   },
   "keywords": [],
