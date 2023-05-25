@@ -42,19 +42,21 @@ const resolvers = {
 
       const token = signToken(profile);
       return { token, profile };
-    },
+    }
+  }
+}
 
     // Add a third argument to the resolver to access data in our `context`
     
     // Set up mutation so a logged in user can only remove their profile and no one else's
-    removeProfile: async (parent, args, context) => {
-      if (context.user) {
-        return Profile.findOneAndDelete({ _id: context.user._id });
-      }
-      throw new AuthenticationError('You need to be logged in!');
-    },
-    // Make it so a logged in user can only remove a skill from their own profile
-  },
-};
+  //   removeProfile: async (parent, args, context) => {
+  //     if (context.user) {
+  //       return Profile.findOneAndDelete({ _id: context.user._id });
+  //     }
+  //     throw new AuthenticationError('You need to be logged in!');
+  //   },
+  //   // Make it so a logged in user can only remove a skill from their own profile
+  // },
+
 
 module.exports = resolvers;
